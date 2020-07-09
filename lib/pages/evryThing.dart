@@ -1,4 +1,5 @@
 
+import 'package:Test_Api/pages/sourcepage.dart';
 import 'package:flutter/material.dart';
 import 'package:Test_Api/services/loading.dart';
 
@@ -92,11 +93,31 @@ child:Padding(
   
     children: <Widget>[
   
-          ClipRRect(
-            
-            borderRadius:BorderRadius.circular(12) ,
-            
-            child: Image.network(articalModel[index].urlToImage)),
+          GestureDetector(
+
+            onTap: (){
+
+Navigator.push(context, MaterialPageRoute(
+  
+  builder: (context)=>    SourcePage(
+
+url: articalModel[index].url
+
+  ) , ),
+  
+  
+  
+  
+  );
+
+
+            },
+                      child: ClipRRect(
+              
+              borderRadius:BorderRadius.circular(12) ,
+              
+              child: Image.network(articalModel[index].urlToImage)),
+          ),
   
           Padding(
   
@@ -143,6 +164,86 @@ child:Padding(
   ),
 ),
 ),
+
+
+
+
+
+
+
+drawer:   Drawer(
+    child: Column(
+  
+    children: <Widget>[
+  
+  SizedBox(height: 50.0, ),
+  
+  ListTile(
+    
+    trailing: Icon( Icons.new_releases, size: 40.0,color: Colors.black87),
+     title: Text('Top Headlines', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.black87 )),
+     onTap: ()=> Navigator.pushNamed(context,'/ArticalView' ),
+     
+     ),
+  
+ Divider( thickness:2.0 , color:Colors.black87 ,),
+  
+  ListTile(
+    trailing: Icon( Icons.category, size: 30.0,color: Colors.black87,),
+     title: Text('Everything', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.black87 )),
+     onTap: ()=> Navigator.pushNamed(context,'/evryThing' ),
+     
+     
+     ),
+  
+  Divider( thickness:2.0 , color:Colors.black87 ,),
+  
+  ListTile(
+    trailing: Icon( Icons.arrow_forward, size: 30.0,color: Colors.black87,),
+     title: Text('Source', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.black87 )),),
+  
+ Divider( thickness:2.0 , color:Colors.black87 ,),
+  
+  ListTile( 
+    
+    trailing: Icon( Icons.search, size: 30.0,color: Colors.black87,),
+    title: Text('Search', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.black87)),
+    
+    onTap: (){
+
+Navigator.pushNamed(context,'/search_page');
+
+    },
+    
+    
+    ),
+  
+  
+    ],
+  
+  
+  
+    ),
+  ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   );
   }
 }

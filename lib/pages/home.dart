@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 
@@ -34,62 +34,60 @@ elevation: 0.0,
 ),
 
 
-
-
-  drawer:   Drawer(
-    child: Column(
+//   drawer:   Drawer(
+//     child: Column(
   
-    children: <Widget>[
+//     children: <Widget>[
   
-  SizedBox(height: 50.0, ),
+//   SizedBox(height: 50.0, ),
   
-  ListTile(
+//   ListTile(
     
-    trailing: Icon( Icons.new_releases, size: 40.0,color: Colors.indigo,),
-     title: Text('Top Headlines', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.indigo[900] )),
-     onTap: ()=> Navigator.pushNamed(context,'/ArticalView' ),
+//     trailing: Icon( Icons.new_releases, size: 40.0,color: Colors.indigo,),
+//      title: Text('Top Headlines', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.indigo[900] )),
+//      onTap: ()=> Navigator.pushNamed(context,'/ArticalView' ),
      
-     ),
+//      ),
   
- Divider( thickness:5.0 , color:Colors.deepOrange ,),
+//  Divider( thickness:5.0 , color:Colors.deepOrange ,),
   
-  ListTile(
-    trailing: Icon( Icons.category, size: 40.0,color: Colors.indigo,),
-     title: Text('Everything', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.indigo[900] )),
-     onTap: ()=> Navigator.pushNamed(context,'/evryThing' ),
+//   ListTile(
+//     trailing: Icon( Icons.category, size: 40.0,color: Colors.indigo,),
+//      title: Text('Everything', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.indigo[900] )),
+//      onTap: ()=> Navigator.pushNamed(context,'/evryThing' ),
      
      
-     ),
+//      ),
   
-  Divider( thickness:5.0 , color:Colors.deepOrange ,),
+//   Divider( thickness:5.0 , color:Colors.deepOrange ,),
   
-  ListTile(
-    trailing: Icon( Icons.arrow_forward, size: 40.0,color: Colors.indigo,),
-     title: Text('Source', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.indigo[900] )),),
+//   ListTile(
+//     trailing: Icon( Icons.arrow_forward, size: 40.0,color: Colors.indigo,),
+//      title: Text('Source', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.indigo[900] )),),
   
- Divider( thickness:5.0 , color:Colors.deepOrange ,),
+//  Divider( thickness:5.0 , color:Colors.deepOrange ,),
   
-  ListTile( 
+//   ListTile( 
     
-    trailing: Icon( Icons.search, size: 40.0,color: Colors.indigo,),
-    title: Text('Search', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.indigo[900])),
+//     trailing: Icon( Icons.search, size: 40.0,color: Colors.indigo,),
+//     title: Text('Search', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.indigo[900])),
     
-    onTap: (){
+//     onTap: (){
 
-Navigator.pushNamed(context,'/search_page');
+// Navigator.pushNamed(context,'/search_page');
 
-    },
+//     },
     
     
-    ),
+//     ),
   
   
-    ],
+//     ],
   
   
   
-    ),
-  ),
+//     ),
+//   ),
  
 
 

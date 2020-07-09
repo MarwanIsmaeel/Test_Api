@@ -1,22 +1,28 @@
 
 import 'dart:convert';
 
+
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 
 class News {
 
 
+
+
+
+
  List<ArticalModel> news=[];
 
 
-
-
-
 Future <void> fetchData () async {
-String url ="http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0942ef391fc54af096c746efad8c3957";
 
 
+try {
+  
 
+
+String url ="https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0942ef391fc54af096c746efad8c3957";
 
 
 print(url);
@@ -24,26 +30,6 @@ print(url);
 
 
 var jsonData =jsonDecode(response.body);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 if(jsonData['status'] == "ok"){
@@ -67,6 +53,9 @@ urlToImage: element["urlToImage"],
 news.add(articalModel);
 
 
+
+
+
  
 }
 }
@@ -74,47 +63,22 @@ news.add(articalModel);
 
 }
 
+
+
+} catch (e) {
+
+Text(" Couldn't connect to the server ");
+
+}
+
+
+
 }
 
 
 
 
 
-
-
-// }
-// else
-
-
-// {
-
-//   print(response.statusCode);
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// //   News({this.news});
-
-
-// //   factory News.fromJson(List<dynamic>jsonData){
-
-
-
-
-// // List <ArticalModel> news =new List<ArticalModel>();
-
-// // news = jsonData.map((i) => ArticalModel.fromJson(i)).toList();
-// // return new News(news: news);
 
 
  }
@@ -145,29 +109,6 @@ String  author;
 
 }
 
-//  factory ArticalModel.fromJson( Map<String,dynamic> json){
-
-//  return ArticalModel (
-  
-  
-  
-//     title: json['title'],
-
-//   //  userId: json['userId'],
-//   //  id: json['id'],
-//    author: json ['author'] ,
-//    description: json['descraption'],
-//  url: json['url'],
-//  urlToImage: json['urlToImage'],
-//  content: json['content'],
-
-
-
-
-
-//  );
-
-//  }
 
 
 

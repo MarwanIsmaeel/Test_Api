@@ -1,5 +1,6 @@
 
 
+import 'package:Test_Api/pages/sourcepage.dart';
 import 'package:Test_Api/services/Artical_model.dart';
 
 
@@ -93,11 +94,35 @@ child:Padding(
   
     children: <Widget>[
   
-          ClipRRect(
-            
-            borderRadius:BorderRadius.circular(12) ,
-            
-            child: Image.network(articalModel[index].urlToImage)),
+          GestureDetector(
+
+
+  onTap: (){
+
+Navigator.push(context, MaterialPageRoute(
+  
+  builder: (context)=>    SourcePage(
+
+url: articalModel[index].url
+
+  ) , ),
+  
+  
+  
+  
+  );
+
+
+            },
+
+
+
+                      child: ClipRRect(
+              
+              borderRadius:BorderRadius.circular(12) ,
+              
+              child: Image.network(articalModel[index].urlToImage)),
+          ),
   
           Padding(
   
