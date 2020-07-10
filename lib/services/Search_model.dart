@@ -1,23 +1,30 @@
 
-import 'dart:convert';
+
 
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 
-class Evrys {
 
+import 'dart:convert';
 
- List<EvryModel> evrys=[];
-
-
-
+class SearchClass {
 
 
 
-Future <void> getEvryThing() async {
 
-  try {
-String url ="https://newsapi.org/v2/everything?q=bitcoin&from=2020-06-09&sortBy=publishedAt&apiKey=0942ef391fc54af096c746efad8c3957";
+
+
+ List< SearchModel> news=[];
+
+
+Future <void> searchData (String category) async {
+
+
+try {
+  
+
+
+String url ="https://newsapi.org/v2/top-headlines?country=us&category=$category&apiKey=0942ef391fc54af096c746efad8c3957";
 
 
 print(url);
@@ -34,7 +41,7 @@ jsonData["articles"].forEach((element){
 
 if(element['urlToImage'] != null && element['description'] != null ){
 
-EvryModel articalModel = EvryModel (
+ SearchModel articalModel =  SearchModel (
 
 
 title: element['title'],
@@ -45,7 +52,10 @@ urlToImage: element["urlToImage"],
 
 );
 
-evrys.add(articalModel);
+news.add(articalModel);
+
+
+
 
 
  
@@ -57,13 +67,15 @@ evrys.add(articalModel);
 
 
 
-  
 } catch (e) {
 
+Text("there was error to get data from server");
 
-  Text("cant't connect to the server !");
 }
-}// the end of fetchData function
+
+
+
+}
 
 
 
@@ -71,16 +83,7 @@ evrys.add(articalModel);
 
 
 
-
-
-
-
-
-
-
-
-
- }// the end of News class
+ }
   
 
 
@@ -93,24 +96,7 @@ evrys.add(articalModel);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class EvryModel {
+class SearchModel {
 
  String  title;
   String  description;
@@ -120,17 +106,7 @@ class EvryModel {
 String  author;
 
 
-  EvryModel({this.title,this.author,this.content,this.description,this.url,this.urlToImage});
+   SearchModel({this.title,this.author,this.content,this.description,this.url,this.urlToImage});
 
 
 }
-
-
-
-
-
-
-
-
-
-

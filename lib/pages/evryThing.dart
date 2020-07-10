@@ -67,100 +67,102 @@ body: _loading ? Center(
 
 child:Padding(
   padding: const EdgeInsets.all(8.0),
-  child:   Container(
-  
+  child:   SingleChildScrollView (
+      child: Container(
     
-  
-  child: ListView.builder(
-  
-    itemCount: articalModel.length,
-  
-    shrinkWrap: true,
-  
-    itemBuilder: (context,index){
-  
-  
-  
-  return   
-  
-  
-  
-  //Text(articalModel[index].title);
-  
-  
-  
-  Column(
-  
-    children: <Widget>[
-  
-          GestureDetector(
+      
+    
+    child: ListView.builder(
+    
+      itemCount: articalModel.length,
+    
+      shrinkWrap: true,
+    
+      itemBuilder: (context,index){
+    
+    
+    
+    return   
+    
+    
+    
+    
+    
+    
+    
+    Column(
+    
+      children: <Widget>[
+    
+            GestureDetector(
 
-            onTap: (){
+              onTap: (){
 
 Navigator.push(context, MaterialPageRoute(
-  
-  builder: (context)=>    SourcePage(
+    
+    builder: (context)=>    SourcePage(
 
 url: articalModel[index].url
 
-  ) , ),
-  
-  
-  
-  
-  );
+    ) , ),
+    
+    
+    
+    
+    );
 
 
-            },
-                      child: ClipRRect(
-              
-              borderRadius:BorderRadius.circular(12) ,
-              
-              child: Image.network(articalModel[index].urlToImage)),
-          ),
-  
-          Padding(
-  
-            padding: const EdgeInsets.all(1.0),
-  
-            child: ListTile(
-              
-              subtitle: Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: Text(articalModel[index].description),
-              ),
-              title: Text(articalModel[index].title,style: TextStyle(color: Colors.black,fontSize: 17.0),)),
-  
-          ),
-  SizedBox(height:5.0 ),
-  
-  
-    ],
-  
-  );
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    }
-  
+              },
+                        child: ClipRRect(
+                
+                borderRadius:BorderRadius.circular(12) ,
+                
+                child: Image.network(articalModel[index].urlToImage)),
+            ),
     
-  
+            Padding(
     
-  
+              padding: const EdgeInsets.all(1.0),
     
-  
-  ),
-  
+              child: ListTile(
+                
+                subtitle: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Text(articalModel[index].description),
+                ),
+                title: Text(articalModel[index].title,style: TextStyle(color: Colors.black,fontSize: 17.0),)),
     
-  
+            ),
+    SizedBox(height:5.0 ),
+    
+    
+      ],
+    
+    );
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      }
+    
+      
+    
+      
+    
+      
+    
+    ),
+    
+      
+    
+    ),
   ),
 ),
 ),
@@ -211,7 +213,7 @@ drawer:   Drawer(
     
     onTap: (){
 
-Navigator.pushNamed(context,'/search_page');
+Navigator.pushNamed(context,'/home');
 
     },
     
