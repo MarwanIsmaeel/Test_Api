@@ -115,30 +115,7 @@ title: Text(list[index].title),
   }
   
   
-  
-  
-  
   ),
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -241,7 +218,7 @@ Navigator.push(context, MaterialPageRoute(
    builder: (context)=>    SearchPage(
 
  category: suggestionList[index]
- +,
+ ,
 
    ) ,) );
   

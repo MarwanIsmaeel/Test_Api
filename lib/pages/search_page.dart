@@ -161,45 +161,13 @@ url: articalModel[index].url
   
   );
   
-  //  BlogTile(
-  
-  
-  
-  //  imageUrl: articalModel[index].urlToImage,
-  
-  // title: articalModel[index].title,
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  // );
-  
-  
-  
-  
-  
-  
-  
-  
   
     }
   
-    
-  
-    
-  
-    
+   
   
   ),
-  
-    
+   
   
   ),
 ),

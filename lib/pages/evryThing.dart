@@ -61,8 +61,6 @@ body: _loading ? Center(
 )
 
 
-
-
 : Center(
 
 child:Padding(

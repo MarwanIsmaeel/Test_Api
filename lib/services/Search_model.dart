@@ -55,9 +55,6 @@ urlToImage: element["urlToImage"],
 news.add(articalModel);
 
 
-
-
-
  
 }
 }

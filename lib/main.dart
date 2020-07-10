@@ -1,8 +1,5 @@
 
 
-//import 'package:Test_Api/pages/home.dart';
-// import 'package:Test_Api/pages/ArticalVeiw.dart';
-//import 'package:Test_Api/pages/ArticalVeiw.dart';
 
 
 import 'package:Test_Api/pages/evryThing.dart';
