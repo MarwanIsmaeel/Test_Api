@@ -1,7 +1,7 @@
 
 import 'package:Test_Api/pages/search_page.dart';
-import 'package:Test_Api/pages/sourcepage.dart';
-import 'package:flutter/foundation.dart';
+
+
 import 'package:flutter/material.dart';
 
 
@@ -195,12 +195,12 @@ query= "";
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    // TODO: implement buildSuggestions
+    
     final suggestionList = query.isEmpty ? recentcategory : category.where((p)=>p.startsWith(query)).toList();
 
 
 
-    //  .where((p) => p.startsWith(query)).toList() ;
+    
     return ListView.builder(
       
       
