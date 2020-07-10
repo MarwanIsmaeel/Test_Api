@@ -45,7 +45,7 @@ articalModel =evrys.evrys;
 
 appBar: AppBar(
 backgroundColor: Colors.indigo[500],
-title:Text( 'EvryThing ',style: TextStyle(fontWeight:FontWeight.bold, color: Colors.white ),),
+title:Text( 'All News  ',style: TextStyle(fontWeight:FontWeight.bold, color: Colors.white ),),
 centerTitle:true,
 ),
 body: _loading ? Center(
@@ -200,7 +200,11 @@ drawer:   Drawer(
   
   ListTile(
     trailing: Icon( Icons.arrow_forward, size: 30.0,color: Colors.black87,),
-     title: Text('Source', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.black87 )),),
+     title: Text('Source', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.black87 )),
+     onTap: ()=> Navigator.pushNamed(context,'/sourceEndPoint' ),
+     
+     
+     ),
   
  Divider( thickness:2.0 , color:Colors.black87 ,),
   

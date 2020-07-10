@@ -46,8 +46,8 @@ title : Row(
   mainAxisAlignment: MainAxisAlignment.center,
   children: <Widget>[
 
-Text('News ', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.red )),
-Text('App  ', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.blue),),
+Text('Select a ', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.white )),
+Text('Category ', style: TextStyle(fontSize: 20.0,fontWeight:FontWeight.bold,color: Colors.blue),),
 
 ],),
 

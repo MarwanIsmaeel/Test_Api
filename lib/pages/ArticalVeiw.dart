@@ -15,8 +15,8 @@ class ArticalView extends StatefulWidget {
 class _ArticalViewState extends State<ArticalView> {
 
 
-  String title = " loading" ;
-//Future <News> data;
+ 
+
 List<ArticalModel> articalModel =new List <ArticalModel>();
  bool _loading = true;
 @override

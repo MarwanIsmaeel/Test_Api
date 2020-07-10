@@ -28,7 +28,7 @@ class _SourcePageState extends State<SourcePage> {
 
 appBar: AppBar(
 backgroundColor: Colors.indigo[500],
-title:Text( 'Source ',style: TextStyle(fontWeight:FontWeight.bold, color: Colors.white ),),
+title:Text( 'Source of  the news ',style: TextStyle(fontWeight:FontWeight.bold, color: Colors.white ),),
 centerTitle:true,
 ),
 
