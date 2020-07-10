@@ -13,8 +13,7 @@ import 'package:flutter/material.dart';
 
 class SourceEndPoint extends StatefulWidget {
 
-String url;
- SourceEndPoint({this.url});
+
 
   @override
   _SourceEndPointState createState() => _SourceEndPointState();
