@@ -22,7 +22,7 @@ try {
   
 
 
-String url ="https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0942ef391fc54af096c746efad8c3957";
+String url ="https://newsapi.org/v2/top-headlines?country=us&apiKey=0942ef391fc54af096c746efad8c3957";
 
 
 print(url);

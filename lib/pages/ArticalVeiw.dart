@@ -48,6 +48,7 @@ appBar: AppBar(
 backgroundColor: Colors.indigo[500],
 title:Text( 'Top Headlines',style: TextStyle(fontWeight:FontWeight.bold, color: Colors.white ),),
 centerTitle:true,
+
 ),
 body: _loading ? Center(
   child:   Container(
@@ -83,12 +84,6 @@ child:Padding(
   
   
   return   
-  
-  
-  
-  //Text(articalModel[index].title);
-  
-  
   
   Column(
   
@@ -144,25 +139,6 @@ url: articalModel[index].url
   
   );
   
-  //  BlogTile(
-  
-  
-  
-  //  imageUrl: articalModel[index].urlToImage,
-  
-  // title: articalModel[index].title,
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  // );
   
   
   
@@ -187,6 +163,8 @@ url: articalModel[index].url
   ),
 ),
 ),
+
+
   );
   }
 }

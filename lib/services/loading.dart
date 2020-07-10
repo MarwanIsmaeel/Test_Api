@@ -17,7 +17,7 @@ class Evrys {
 Future <void> getEvryThing() async {
 
   try {
-String url ="https://newsapi.org/v2/everything?q=bitcoin&from=2020-06-09&sortBy=publishedAt&apiKey=0942ef391fc54af096c746efad8c3957";
+String url ="https://newsapi.org/v2/everything?q=bitcoin&from=2020-06-10&sortBy=publishedAt&apiKey=0942ef391fc54af096c746efad8c3957";
 
 
 print(url);

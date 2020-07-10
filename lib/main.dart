@@ -14,6 +14,8 @@ import 'package:flutter/material.dart';
 
 
 void main() => runApp(MaterialApp(
+  
+  debugShowCheckedModeBanner: false,
 
 initialRoute: '/evryThing',
 routes: {
@@ -29,6 +31,8 @@ routes: {
 '/search_page' : (context)=> SearchPage(),
 
 },
+
+
 
 ));
 
